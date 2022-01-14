@@ -1,8 +1,8 @@
 <html>
     <body>
+        <h1>Experimenteren met ARIA</h1>
 
-
-<h1>Een combo-box voorbeeld uit een recente snippet</h1>
+<h2>Een combo-box voorbeeld uit een recente snippet</h2>
 <p>Uit een recent snippet dat ik heb gemaakt om eem betere combo-box te maken. Een versimpelde versie van het voorbeeld dat W3C zelf geeft.</p>
         <label id="ex3-label" class="combobox-label">
             Maak een keuze
@@ -34,6 +34,14 @@
           </div>
 
 <p>Met aria-owns wordt de relatie gelegd tussen de div en de lijst van opties, dit is puur om een semantische relatie aan te duiden, omdat uit de code zelf verder geen relatie blijkt. Om invoer mogelijk te maken en een relatie tussen autocomplete en de lijst van opties te leggen, wordt er een invoerveld gebruikt. Dit is wel een echte programmatische relatie. Dat invoerveld beheert namelijk de lijst van opties. Vandaar aria-controls. De opties zelf staan in een ongeordende lijst die de rol van listbox heeft gekregen.</p>
+
+
+<h2>Een progressbar</h2>
+
+<div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-describedby="status"></div>
+<div aria-busy="true" id="status">Status: 
+    <span aria-valuenow="">65</span>
+</div>
 
     </body>
 </html>
